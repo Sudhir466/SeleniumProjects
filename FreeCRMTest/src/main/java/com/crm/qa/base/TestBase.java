@@ -21,7 +21,7 @@ public class TestBase {
 			
 			// This is Property file
 		 prop =new Properties();
-		 FileInputStream fis=new FileInputStream("D:\\new installation\\Workspace latest\\FreeCRMTest\\src\\main\\java\\com\\crm\\qa\\config\\config.properties");
+		 FileInputStream fis=new FileInputStream("C:\\Users\\Sudhir\\git\\SeleniumProjects\\FreeCRMTest\\src\\main\\java\\com\\crm\\qa\\config\\config.properties");
 		 prop.load(fis);
 		}
 		catch(FileNotFoundException e)

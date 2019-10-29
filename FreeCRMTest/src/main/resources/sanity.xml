@@ -6,11 +6,11 @@
        
      <class name="com.crm.qa.testcases.ContactsPageTest">
       <methods>
-        <include name="verifyTitleTest" />
-        <include name="verifyCorrectUserTest" />
-        <include name="selectContactByNameTest"/>
+        <exclude name="verifyTitleTest" />
+        <exclude name="verifyCorrectUserTest" />
+        <exclude name="selectContactByNameTest"/>
         <include name="selectMultipleContactsTest"/>
-        <include name="createNewContactTest"/>
+        <exclude name="createNewContactTest"/>
       </methods>
      </class> 
       

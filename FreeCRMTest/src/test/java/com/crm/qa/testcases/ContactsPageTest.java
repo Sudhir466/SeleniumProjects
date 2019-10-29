@@ -52,14 +52,15 @@ public class ContactsPageTest extends TestBase {
 	
 	@Test(priority=3)
     public void selectContactByNameTest() {
-    	contactsPage.selectContactByName("Tanu Lekha");
+    	contactsPage.selectContactByName("Tanu  Lekha");
     	
     }
 	@Test(priority=4)
-	public void selectMultipleContactsTest() throws InterruptedException {
-		contactsPage.selectContactByName("Tanu Lekha");
+	public void selectMultipleContactsTest() {
+		contactsPage.selectContactByName("Tanu  Lekha");
     	contactsPage.selectContactByName("Sudhir Sharma");
-    	Thread.sleep(2000);
+    	
+    	
 	}
 	@DataProvider
 	public Object[][] getCrmTestData() { 
