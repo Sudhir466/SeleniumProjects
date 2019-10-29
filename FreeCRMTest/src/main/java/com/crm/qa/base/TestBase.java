@@ -17,7 +17,9 @@ public class TestBase {
 	public static Properties prop;
 	public TestBase(){
 		
-		try {			
+		try {	
+			
+			// This is Property file
 		 prop =new Properties();
 		 FileInputStream fis=new FileInputStream("D:\\new installation\\Workspace latest\\FreeCRMTest\\src\\main\\java\\com\\crm\\qa\\config\\config.properties");
 		 prop.load(fis);
