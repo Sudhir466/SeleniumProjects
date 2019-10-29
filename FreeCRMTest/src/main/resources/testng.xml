@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Free CRM Application Test for Automation Test Suite" verbose="1" >
+  <test name="LandingPageTest" >
+    <classes>
+      <class name="com.crm.qa.testcases.LandingPageTest">
+        <methods>
+         <include name="titleHomeTest" />
+         <include name="loginBtnTest" />
+         <include name="signUpBtnTest" />
+         </methods>
+       </class>
+     </classes>
+  </test>
+      
+  <test name="LoginPageTest" >  
+    <classes>
+     <class name="com.crm.qa.testcases.LoginPageTest">
+      <methods>
+         <include name="titleLoginTest" />
+         <include name="loginTest" />
+      </methods>
+     </class>
+    </classes>
+   </test>
+      
+        
+     <test name="HomePageTest" > 
+     <classes>
+      <class name="com.crm.qa.testcases.HomePageTest">
+       <methods>
+        <include name="verifyCorrectUserLabelTest" />
+        <include name="clickOnContactsLinkTest" />
+        <include name="clickOnDealsLinkTest"/>
+        <include name="clickOnTasksLinkTest"/>
+       </methods>
+      </class>
+      
+    </classes>
+ </test>
+ 
+   <test name="ContactsPageTest" >
+    <classes>
+       
+     <class name="com.crm.qa.testcases.ContactsPageTest">
+      <methods>
+         <include name="verifyTitleTest" />
+        <include name="verifyCorrectUserTest" />
+        <include name="selectContactByNameTest"/>
+        <include name="selectMultipleContactsTest"/>
+        <exclude name="createNewContactTest"/>
+      </methods>
+      </class>  
+      </classes>
+      </test> 
+</suite>
